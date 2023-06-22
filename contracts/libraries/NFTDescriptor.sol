@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
-pragma solidity ^0.7.0;
+pragma solidity ^0.7.6;
 pragma abicoder v2;
 
-import '@thinkincoin-libs/uniswap-v3-core/contracts/interfaces/IUniswapV3Pool.sol';
-import '@uniswap/v3-core/contracts/libraries/TickMath.sol';
-import '@uniswap/v3-core/contracts/libraries/BitMath.sol';
-import '@uniswap/v3-core/contracts/libraries/FullMath.sol';
+import 'https://raw.githubusercontent.com/Uniswap/v3-core/main/contracts/UniswapV3Pool.sol';
+import 'https://raw.githubusercontent.com/Uniswap/v3-core/main/contracts/interfaces/IUniswapV3Pool.sol';
+import 'https://raw.githubusercontent.com/Uniswap/v3-core/main/contracts/libraries/TickMath.sol';
+import 'https://raw.githubusercontent.com/Uniswap/v3-core/main/contracts/libraries/FullMath.sol';
 import '@openzeppelin/contracts/utils/Strings.sol';
 import '@openzeppelin/contracts/math/SafeMath.sol';
 import '@openzeppelin/contracts/math/SignedSafeMath.sol';
-import '../base/base64.sol';
+import '../base/Base64.sol';
 import './HexStrings.sol';
 import './NFTSVG.sol';
 
