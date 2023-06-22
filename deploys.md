@@ -21,15 +21,15 @@ Harmony Network
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------ |
 | [UniswapV3Factory](https://explorer.harmony.one/address/0x73e20b9dd9577ad6a5acafb27d1fb88d9d7d31d5?activeTab=6)                                              | `0x73e20b9dd9577ad6a5acafb27d1fb88d9d7d31d5`           |
 | [Multicall2](https://explorer.harmony.one/address/0xdb5849ea2d14ec82f13d1cb7f08a9ca43c2c6754?activeTab=6)                                                    | `0xdb5849ea2d14ec82f13d1cb7f08a9ca43c2c6754`           |
-#| [ProxyAdmin](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v3.4.1-solc-0.7-2/contracts/proxy/ProxyAdmin.sol)                                   | `0xB753548F6E010e7e680BA186F9Ca1BdAB2E90cf2`           |
+| [ProxyAdmin](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v3.4.1-solc-0.7-2/contracts/proxy/ProxyAdmin.sol)                                   | `                                          `           |
 | [TickLens](https://explorer.harmony.one/address/0xe37083979fc1aba5309a9e9e6faeeba9f34111a5?activeTab=6)                                                      | `0xE37083979fc1Aba5309a9e9E6FAeEba9f34111A5`           |
 | [Quoter](https://github.com/Uniswap/uniswap-v3-periphery/blob/v1.0.0/contracts/lens/Quoter.sol)                                                              | `0x76376774BD25fE7bd4c5d12218A0ED3105E018d9`           |
-#| [SwapRouter](https://github.com/Uniswap/uniswap-v3-periphery/blob/v1.0.0/contracts/SwapRouter.sol)                                                           | `0xE592427A0AEce92De3Edee1F18E0157C05861564`           |
-| [NFTDescriptor](https://github.com/Uniswap/uniswap-v3-periphery/blob/v1.0.0/contracts/libraries/NFTDescriptor.sol)                                           | `0x42B24A95702b9986e82d421cC3568932790A48Ec`           |
-| [NonfungibleTokenPositionDescriptor](https://github.com/Uniswap/uniswap-v3-periphery/blob/v1.0.0/contracts/NonfungibleTokenPositionDescriptor.sol)           | `0x91ae842A5Ffd8d12023116943e72A606179294f3`           |
-| [TransparentUpgradeableProxy](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v3.4.1-solc-0.7-2/contracts/proxy/TransparentUpgradeableProxy.sol) | `0xEe6A57eC80ea46401049E92587E52f5Ec1c24785`           | 
-| [NonfungiblePositionManager](https://github.com/Uniswap/uniswap-v3-periphery/blob/v1.0.0/contracts/NonfungiblePositionManager.sol)                           | `0xC36442b4a4522E871399CD717aBDD847Ab11FE88`           | 
-| [V3Migrator](https://github.com/Uniswap/uniswap-v3-periphery/blob/v1.0.0/contracts/V3Migrator.sol)                                                           | `0xA5644E29708357803b5A882D272c41cC0dF92B34`           | 
+| [SwapRouter](https://github.com/Uniswap/uniswap-v3-periphery/blob/v1.0.0/contracts/SwapRouter.sol)                                                           | `0x3A49a917c501eCcA3C1A256959BF8557DdF40514`           |
+| [NFTDescriptor](https://github.com/Uniswap/uniswap-v3-periphery/blob/v1.0.0/contracts/libraries/NFTDescriptor.sol)                                           | `0x3af198ec577c22e13743c610cfb7eabe8af92e94`           |
+| [NonfungibleTokenPositionDescriptor](https://github.com/Uniswap/uniswap-v3-periphery/blob/v1.0.0/contracts/NonfungibleTokenPositionDescriptor.sol)           | `0x0d8712ec8bb4132134576151fd0574a4969c8a88`           |
+| [TransparentUpgradeableProxy](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v3.4.1-solc-0.7-2/contracts/proxy/TransparentUpgradeableProxy.sol) | `                                          `           | 
+| [NonfungiblePositionManager](https://github.com/Uniswap/uniswap-v3-periphery/blob/v1.0.0/contracts/NonfungiblePositionManager.sol)                           | `0x8f406502534d16BC40cea2AAd95915516b25Cc2E`           | 
+| [V3Migrator](https://github.com/Uniswap/uniswap-v3-periphery/blob/v1.0.0/contracts/V3Migrator.sol)                                                           | `0x01777581f63daa788fdb8a86a1b1cecd04461d46`           | 
 
 These addresses are final and were deployed from these npm package versions:
 
