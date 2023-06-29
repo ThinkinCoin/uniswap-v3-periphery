@@ -2,7 +2,7 @@
 pragma solidity ^0.7.0;
 
 import '@openzeppelin/contracts/utils/Strings.sol';
-import 'https://raw.githubusercontent.com/Uniswap/v3-core/main/contracts/libraries/BitMath.sol';
+import '@thinkincoin-libs/uniswap-v3-core/contracts/libraries/BitMath.sol';
 import '../base/Base64.sol';
 
 /// @title NFTSVG
