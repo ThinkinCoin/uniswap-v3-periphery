@@ -2,10 +2,10 @@
 pragma solidity ^0.7.6;
 pragma abicoder v2;
 
-import 'https://raw.githubusercontent.com/Uniswap/v3-core/main/contracts/UniswapV3Pool.sol';
-import 'https://raw.githubusercontent.com/Uniswap/v3-core/main/contracts/interfaces/IUniswapV3Pool.sol';
-import 'https://raw.githubusercontent.com/Uniswap/v3-core/main/contracts/libraries/TickMath.sol';
-import 'https://raw.githubusercontent.com/Uniswap/v3-core/main/contracts/libraries/FullMath.sol';
+import '@thinkincoin-libs/uniswap-v3-core/contracts/UniswapV3Pool.sol';
+import '@thinkincoin-libs/uniswap-v3-core/contracts/interfaces/IUniswapV3Pool.sol';
+import '@thinkincoin-libs/uniswap-v3-core/contracts/libraries/TickMath.sol';
+import '@thinkincoin-libs/uniswap-v3-core/contracts/libraries/FullMath.sol';
 import '@openzeppelin/contracts/utils/Strings.sol';
 import '@openzeppelin/contracts/math/SafeMath.sol';
 import '@openzeppelin/contracts/math/SignedSafeMath.sol';
