@@ -1,0 +1,87 @@
+{
+	"compiler": {
+		"version": "0.7.6+commit.7338295f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "hash",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "bytes",
+						"name": "signature",
+						"type": "bytes"
+					}
+				],
+				"name": "isValidSignature",
+				"outputs": [
+					{
+						"internalType": "bytes4",
+						"name": "magicValue",
+						"type": "bytes4"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"details": "Interface defined by EIP-1271",
+			"kind": "dev",
+			"methods": {
+				"isValidSignature(bytes32,bytes)": {
+					"details": "MUST return the bytes4 magic value 0x1626ba7e when function passes. MUST NOT modify state (using STATICCALL for solc < 0.5, view modifier for solc > 0.5). MUST allow external calls.",
+					"params": {
+						"hash": "Hash of the data to be signed",
+						"signature": "Signature byte array associated with _data"
+					},
+					"returns": {
+						"magicValue": "The bytes4 magic value 0x1626ba7e"
+					}
+				}
+			},
+			"title": "Interface for verifying contract-based account signatures",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"isValidSignature(bytes32,bytes)": {
+					"notice": "Returns whether the provided signature is valid for the provided data"
+				}
+			},
+			"notice": "Interface that verifies provided signature for the data",
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/NonfungiblePositionManager_flattened.sol": "IERC1271"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/NonfungiblePositionManager_flattened.sol": {
+			"keccak256": "0xd74b5b428addb74e0993a3af4ee1d174f9302deb19017dc1b9d9f6c7534613eb",
+			"urls": [
+				"bzz-raw://4cc72d9a06c917267f29453af96f35508ea99c2a7ce7eb5e5b71d2b3e5a7e76c",
+				"dweb:/ipfs/QmaTmC35CKrwG82PyTgquywtLgwbEJ4t4bGYSfuFzvBVCH"
+			]
+		}
+	},
+	"version": 1
+}

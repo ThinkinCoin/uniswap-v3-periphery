@@ -1,0 +1,46 @@
+{
+	"compiler": {
+		"version": "0.7.6+commit.7338295f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"notice": "Provides validation for callbacks from Uniswap V3 Pools",
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/lens/Quoter_flattened.sol": "CallbackValidation"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/lens/Quoter_flattened.sol": {
+			"keccak256": "0x3f9695c7ec4a3fa11f5a9d0eaf9aada9d61fcb7fedd7d0abc2c8edf9bc75cafc",
+			"license": "GPL-2.0-or-later",
+			"urls": [
+				"bzz-raw://094d8b040401547a2eaff56b56f25484927138d22930386c2df674c3ddfb113d",
+				"dweb:/ipfs/QmZf3rcJhRpkseKGSSE3DB9SHthNRZfwZnWfDAX8N5SURf"
+			]
+		}
+	},
+	"version": 1
+}

@@ -1,0 +1,82 @@
+{
+	"compiler": {
+		"version": "0.7.6+commit.7338295f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "WETH9",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "factory",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"stateVariables": {
+				"WETH9": {
+					"return": "Returns the address of WETH9"
+				},
+				"factory": {
+					"return": "Returns the address of the Uniswap V3 factory"
+				}
+			},
+			"title": "Immutable state",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"notice": "Immutable state used by periphery contracts",
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/V3Migrator_flattened.sol": "PeripheryImmutableState"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/V3Migrator_flattened.sol": {
+			"keccak256": "0xd78eb8de8e7a0f5d667800a6631d561370e2f2737375490956742d60b07a6883",
+			"license": "GPL-2.0-or-later",
+			"urls": [
+				"bzz-raw://d4d6a387428b751f0fc3d1f1fb4936a7711848743ea9c899a4a088e287280ec3",
+				"dweb:/ipfs/QmdLG5V2xLn77tmyg2CJinmzDt3SU4QaQPnVCLgXtkqAMt"
+			]
+		}
+	},
+	"version": 1
+}

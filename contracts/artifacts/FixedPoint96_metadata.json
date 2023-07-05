@@ -1,0 +1,47 @@
+{
+	"compiler": {
+		"version": "0.7.6+commit.7338295f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"details": "Used in SqrtPriceMath.sol",
+			"kind": "dev",
+			"methods": {},
+			"title": "FixedPoint96",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"notice": "A library for handling binary fixed point numbers, see https://en.wikipedia.org/wiki/Q_(number_format)",
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/NonfungiblePositionManager_flattened.sol": "FixedPoint96"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/NonfungiblePositionManager_flattened.sol": {
+			"keccak256": "0xd74b5b428addb74e0993a3af4ee1d174f9302deb19017dc1b9d9f6c7534613eb",
+			"urls": [
+				"bzz-raw://4cc72d9a06c917267f29453af96f35508ea99c2a7ce7eb5e5b71d2b3e5a7e76c",
+				"dweb:/ipfs/QmaTmC35CKrwG82PyTgquywtLgwbEJ4t4bGYSfuFzvBVCH"
+			]
+		}
+	},
+	"version": 1
+}

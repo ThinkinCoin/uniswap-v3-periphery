@@ -1,0 +1,62 @@
+{
+	"deploy": {
+		"VM:-": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"main:1": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"ropsten:3": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"rinkeby:4": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"kovan:42": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"goerli:5": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"Custom": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		}
+	},
+	"data": {
+		"bytecode": {
+			"generatedSources": [],
+			"linkReferences": {},
+			"object": "60566023600b82828239805160001a607314601657fe5b30600052607381538281f3fe73000000000000000000000000000000000000000030146080604052600080fdfea2646970667358221220b3c5bbcd3a19452e58d5e4f311e51dbb32b9ab169d630bd10258d2036d3582b964736f6c63430007060033",
+			"opcodes": "PUSH1 0x56 PUSH1 0x23 PUSH1 0xB DUP3 DUP3 DUP3 CODECOPY DUP1 MLOAD PUSH1 0x0 BYTE PUSH1 0x73 EQ PUSH1 0x16 JUMPI INVALID JUMPDEST ADDRESS PUSH1 0x0 MSTORE PUSH1 0x73 DUP2 MSTORE8 DUP3 DUP2 RETURN INVALID PUSH20 0x0 ADDRESS EQ PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 0xB3 0xC5 0xBB 0xCD GASPRICE NOT GASLIMIT 0x2E PC 0xD5 0xE4 RETURN GT 0xE5 SAR 0xBB ORIGIN 0xB9 0xAB AND SWAP14 PUSH4 0xBD10258 0xD2 SUB PUSH14 0x3582B964736F6C63430007060033 ",
+			"sourceMap": "116666:4762:0:-:0;;;;;;;;;;;;;;;;;;;;;;;;;"
+		},
+		"deployedBytecode": {
+			"generatedSources": [],
+			"immutableReferences": {},
+			"linkReferences": {},
+			"object": "73000000000000000000000000000000000000000030146080604052600080fdfea2646970667358221220b3c5bbcd3a19452e58d5e4f311e51dbb32b9ab169d630bd10258d2036d3582b964736f6c63430007060033",
+			"opcodes": "PUSH20 0x0 ADDRESS EQ PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 0xB3 0xC5 0xBB 0xCD GASPRICE NOT GASLIMIT 0x2E PC 0xD5 0xE4 RETURN GT 0xE5 SAR 0xBB ORIGIN 0xB9 0xAB AND SWAP14 PUSH4 0xBD10258 0xD2 SUB PUSH14 0x3582B964736F6C63430007060033 ",
+			"sourceMap": "116666:4762:0:-:0;;;;;;;;"
+		},
+		"gasEstimates": {
+			"creation": {
+				"codeDepositCost": "17200",
+				"executionCost": "97",
+				"totalCost": "17297"
+			},
+			"internal": {
+				"mulDiv(uint256,uint256,uint256)": "infinite",
+				"mulDivRoundingUp(uint256,uint256,uint256)": "infinite"
+			}
+		},
+		"methodIdentifiers": {}
+	},
+	"abi": []
+}

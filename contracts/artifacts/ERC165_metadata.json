@@ -1,0 +1,74 @@
+{
+	"compiler": {
+		"version": "0.7.6+commit.7338295f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "bytes4",
+						"name": "interfaceId",
+						"type": "bytes4"
+					}
+				],
+				"name": "supportsInterface",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"details": "Implementation of the {IERC165} interface. Contracts may inherit from this and call {_registerInterface} to declare their support of an interface.",
+			"kind": "dev",
+			"methods": {
+				"supportsInterface(bytes4)": {
+					"details": "See {IERC165-supportsInterface}. Time complexity O(1), guaranteed to always use less than 30 000 gas."
+				}
+			},
+			"stateVariables": {
+				"_supportedInterfaces": {
+					"details": "Mapping of interface ids to whether or not it's supported."
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/NonfungiblePositionManager_flattened.sol": "ERC165"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/NonfungiblePositionManager_flattened.sol": {
+			"keccak256": "0xd74b5b428addb74e0993a3af4ee1d174f9302deb19017dc1b9d9f6c7534613eb",
+			"urls": [
+				"bzz-raw://4cc72d9a06c917267f29453af96f35508ea99c2a7ce7eb5e5b71d2b3e5a7e76c",
+				"dweb:/ipfs/QmaTmC35CKrwG82PyTgquywtLgwbEJ4t4bGYSfuFzvBVCH"
+			]
+		}
+	},
+	"version": 1
+}
