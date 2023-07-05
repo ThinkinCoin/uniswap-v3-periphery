@@ -1283,16 +1283,6 @@
   dependencies:
     defer-to-connect "^2.0.0"
 
-"@thinkincoin-libs/uniswap-v2-core@^1.0.2":
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@thinkincoin-libs/uniswap-v2-core/-/uniswap-v2-core-1.0.2.tgz#371c129e7cc9ff983344111c988c0adebea720fd"
-  integrity sha512-jz2A21I0olXekWMB698LOLlQGnN0nxfCijrPFOewvLAmEfHJqBUBszORyqAyNrr4H68X5Eo8Op3wGirjwWIgAg==
-
-"@thinkincoin-libs/uniswap-v3-core@^1.0.2":
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@thinkincoin-libs/uniswap-v3-core/-/uniswap-v3-core-1.0.2.tgz#2ba978dc045bfc48f7a9cc773ee98690ea03f284"
-  integrity sha512-vg7vbgVE2gPLHoAbx/84a/N52W3Gv2KTRCqDJZ9VbF0Wf57S0FynEHlwI1bgXVz/zJtFpFLvxYQOMYOPkIH8aA==
-
 "@typechain/ethers-v5@^2.0.0":
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/@typechain/ethers-v5/-/ethers-v5-2.0.0.tgz#cd3ca1590240d587ca301f4c029b67bfccd08810"
