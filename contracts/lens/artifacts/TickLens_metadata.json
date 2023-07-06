@@ -89,7 +89,7 @@
 		"remappings": []
 	},
 	"sources": {
-		"@uniswap/v3-core/contracts/interfaces/IUniswapV3Pool.sol": {
+		"@thinkincoin-libs/uniswap-v3-core/contracts/interfaces/IUniswapV3Pool.sol": {
 			"keccak256": "0xfe6113d518466cd6652c85b111e01f33eb62157f49ae5ed7d5a3947a2044adb1",
 			"license": "GPL-2.0-or-later",
 			"urls": [
@@ -97,7 +97,7 @@
 				"dweb:/ipfs/QmWaoacnzsucTvBME2o7YgZBZMhaHv7fkj83htHMVWJKWh"
 			]
 		},
-		"@uniswap/v3-core/contracts/interfaces/pool/IUniswapV3PoolActions.sol": {
+		"@thinkincoin-libs/uniswap-v3-core/contracts/interfaces/pool/IUniswapV3PoolActions.sol": {
 			"keccak256": "0x9453dd0e7442188667d01d9b65de3f1e14e9511ff3e303179a15f6fc267f7634",
 			"license": "GPL-2.0-or-later",
 			"urls": [
@@ -105,7 +105,7 @@
 				"dweb:/ipfs/QmRnzEDsaqtd9PJEVcgQi7p5aV5pMSvRUoGZJAdwFUJxgZ"
 			]
 		},
-		"@uniswap/v3-core/contracts/interfaces/pool/IUniswapV3PoolDerivedState.sol": {
+		"@thinkincoin-libs/uniswap-v3-core/contracts/interfaces/pool/IUniswapV3PoolDerivedState.sol": {
 			"keccak256": "0xe603ac5b17ecdee73ba2b27efdf386c257a19c14206e87eee77e2017b742d9e5",
 			"license": "GPL-2.0-or-later",
 			"urls": [
@@ -113,7 +113,7 @@
 				"dweb:/ipfs/QmaKDqYYFU4d2W2iN77aDHptfbFmYZRrMYXHeGpJmM8C1c"
 			]
 		},
-		"@uniswap/v3-core/contracts/interfaces/pool/IUniswapV3PoolEvents.sol": {
+		"@thinkincoin-libs/uniswap-v3-core/contracts/interfaces/pool/IUniswapV3PoolEvents.sol": {
 			"keccak256": "0x8071514d0fe5d17d6fbd31c191cdfb703031c24e0ece3621d88ab10e871375cd",
 			"license": "GPL-2.0-or-later",
 			"urls": [
@@ -121,7 +121,7 @@
 				"dweb:/ipfs/QmaGK6vVwB95QSTR1XMYvrh7ivYAYZxi3fD7v6VMA4jZ39"
 			]
 		},
-		"@uniswap/v3-core/contracts/interfaces/pool/IUniswapV3PoolImmutables.sol": {
+		"@thinkincoin-libs/uniswap-v3-core/contracts/interfaces/pool/IUniswapV3PoolImmutables.sol": {
 			"keccak256": "0xf6e5d2cd1139c4c276bdbc8e1d2b256e456c866a91f1b868da265c6d2685c3f7",
 			"license": "GPL-2.0-or-later",
 			"urls": [
@@ -129,7 +129,7 @@
 				"dweb:/ipfs/QmfL8gaqt3ffAnm6nVj5ksuNpLygXuL3xq5VBqrkwC2JJ3"
 			]
 		},
-		"@uniswap/v3-core/contracts/interfaces/pool/IUniswapV3PoolOwnerActions.sol": {
+		"@thinkincoin-libs/uniswap-v3-core/contracts/interfaces/pool/IUniswapV3PoolOwnerActions.sol": {
 			"keccak256": "0x759b78a2918af9e99e246dc3af084f654e48ef32bb4e4cb8a966aa3dcaece235",
 			"license": "GPL-2.0-or-later",
 			"urls": [
@@ -137,7 +137,7 @@
 				"dweb:/ipfs/QmUnWVwN9FKB9uV5Pr8YfLpWZnYM2DENnRMaadZ492JS9u"
 			]
 		},
-		"@uniswap/v3-core/contracts/interfaces/pool/IUniswapV3PoolState.sol": {
+		"@thinkincoin-libs/uniswap-v3-core/contracts/interfaces/pool/IUniswapV3PoolState.sol": {
 			"keccak256": "0x852dc1f5df7dcf7f11e7bb3eed79f0cea72ad4b25f6a9d2c35aafb48925fd49f",
 			"license": "GPL-2.0-or-later",
 			"urls": [

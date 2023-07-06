@@ -15,16 +15,16 @@ per the terms defined [here](./bug-bounty.md).
 ## Local deployment
 
 In order to deploy this code to a local testnet, you should install the npm package
-`@uniswap/v3-periphery`
+`@thinkincoin-libs/uniswap-v3-periphery`
 and import bytecode imported from artifacts located at
-`@uniswap/v3-periphery/artifacts/contracts/*/*.json`.
+`@thinkincoin-libs/uniswap-v3-periphery/artifacts/contracts/*/*.json`.
 For example:
 
 ```typescript
 import {
   abi as SWAP_ROUTER_ABI,
   bytecode as SWAP_ROUTER_BYTECODE,
-} from '@uniswap/v3-periphery/artifacts/contracts/SwapRouter.sol/SwapRouter.json'
+} from '@thinkincoin-libs/uniswap-v3-periphery/artifacts/contracts/SwapRouter.sol/SwapRouter.json'
 
 // deploy the bytecode
 ```
@@ -36,10 +36,10 @@ your local deployment.
 ## Using solidity interfaces
 
 The Uniswap v3 periphery interfaces are available for import into solidity smart contracts
-via the npm artifact `@uniswap/v3-periphery`, e.g.:
+via the npm artifact `@thinkincoin-libs/uniswap-v3-periphery`, e.g.:
 
 ```solidity
-import '@uniswap/v3-periphery/contracts/interfaces/ISwapRouter.sol';
+import '@thinkincoin-libs/uniswap-v3-periphery/contracts/interfaces/ISwapRouter.sol';
 
 contract MyContract {
   ISwapRouter router;

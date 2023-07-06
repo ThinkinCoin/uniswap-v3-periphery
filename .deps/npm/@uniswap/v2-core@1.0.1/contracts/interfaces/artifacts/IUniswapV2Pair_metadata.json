@@ -670,7 +670,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			".deps/npm/@uniswap/v2-core@1.0.1/contracts/interfaces/IUniswapV2Pair.sol": "IUniswapV2Pair"
+			".deps/npm/@thinkincoin-libs/uniswap-v2-core@1.0.1/contracts/interfaces/IUniswapV2Pair.sol": "IUniswapV2Pair"
 		},
 		"evmVersion": "istanbul",
 		"libraries": {},
@@ -684,7 +684,7 @@
 		"remappings": []
 	},
 	"sources": {
-		".deps/npm/@uniswap/v2-core@1.0.1/contracts/interfaces/IUniswapV2Pair.sol": {
+		".deps/npm/@thinkincoin-libs/uniswap-v2-core@1.0.1/contracts/interfaces/IUniswapV2Pair.sol": {
 			"keccak256": "0x7c9bc70e5996c763e02ff38905282bc24fb242b0ef2519a003b36824fc524a4b",
 			"urls": [
 				"bzz-raw://85d5ad2dd23ee127f40907a12865a1e8cb5828814f6f2480285e1827dd72dedf",
