@@ -79,8 +79,7 @@ export default {
       url: `https://optimism-mainnet.infura.io/v3/${process.env.INFURA_API_KEY}`,
     },
     harmony: {
-      url: "https://api.harmony.one",
-      chainId: 1666600000,
+      url: `https://api.harmony.one`,
     },
   },
   etherscan: {
