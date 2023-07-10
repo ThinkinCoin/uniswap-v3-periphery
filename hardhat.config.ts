@@ -81,10 +81,6 @@ export default {
     harmony: {
       url: "https://api.harmony.one",
       chainId: 1666600000,
-      accounts: ['<HIDEN>'], // Private key from your account
-      from: '0xbB70CA954d89779F8AFAAAb8Ae383b281e3B27A4', // Your Deployer Account
-      gasPrice: 20000000000,
-      gas: 3000000,
     },
   },
   etherscan: {
