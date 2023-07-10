@@ -1288,15 +1288,15 @@
   dependencies:
     defer-to-connect "^2.0.0"
 
-"@thinkincoin-libs/uniswap-v2-core@1.0.3":
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/@thinkincoin-libs/uniswap-v2-core/-/uniswap-v2-core-1.0.3.tgz#e1b5579fac6e4085b76c06b47b7f2da474915f4a"
-  integrity sha512-pOg+3bUzL2keA+AwQYAO1ermSTUCMoQbtGJzgvw04Q5xeYuQVXzYFaIFkS4O8HzeNBzhP583T7CPNeP5z4k3Tw==
+"@thinkincoin-libs/uniswap-v2-core@1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@thinkincoin-libs/uniswap-v2-core/-/uniswap-v2-core-1.0.1.tgz#2cc7d70b2068984e4f836b1836b558ee72793d22"
+  integrity sha512-OQmRSM19oIR1AaCDptpW5xKmlb5B5ZHpG9ZEwA/hSvyXiXkh4dF5wE/HMauUbvPeKKLwUkTC6rnaeEZBnTWUYw==
 
-"@thinkincoin-libs/uniswap-v3-core@1.0.2":
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@thinkincoin-libs/uniswap-v3-core/-/uniswap-v3-core-1.0.2.tgz#2ba978dc045bfc48f7a9cc773ee98690ea03f284"
-  integrity sha512-vg7vbgVE2gPLHoAbx/84a/N52W3Gv2KTRCqDJZ9VbF0Wf57S0FynEHlwI1bgXVz/zJtFpFLvxYQOMYOPkIH8aA==
+"@thinkincoin-libs/uniswap-v3-core@1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@thinkincoin-libs/uniswap-v3-core/-/uniswap-v3-core-1.0.1.tgz#a13e45688d7ef7189fa1bf2bc6e37dc96987545a"
+  integrity sha512-3squPzdoCD2PYzr+y1tQh1nvJk5C6r74ctsZIJrumJ9daqrhZSe6foAYxeqBuSWQJAAdb0Ah32V/q1vpCm3h1Q==
 
 "@typechain/ethers-v5@^2.0.0":
   version "2.0.0"

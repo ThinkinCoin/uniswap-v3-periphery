@@ -80,7 +80,7 @@ export default {
     },
     harmony: {
       url: `https://api.harmony.one`,
-    },
+    },  
   },
   etherscan: {
     // Your API key for Etherscan

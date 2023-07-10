@@ -1,11 +1,11 @@
 {
-  "name": "@thinkincoin-libs/uniswap-v3-periphery",
+  "name": "@thinkincoin-libs/swap-v3-periphery",
   "description": "🎚 Peripheral smart contracts for interacting with Uniswap V3",
   "license": "GPL-2.0-or-later",
   "publishConfig": {
     "access": "public"
   },
-  "version": "1.4.5",
+  "version": "1.0.1",
   "homepage": "https://thinkincoin.com",
   "keywords": [
     "uniswap",
@@ -14,7 +14,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/thinkincoin/uniswap-v3-periphery"
+    "url": "https://github.com/Thinkincoin/uniswap-v3-periphery"
   },
   "files": [
     "contracts/base",
@@ -42,7 +42,6 @@
     "@typechain/ethers-v5": "^4.0.0",
     "@types/chai": "^4.2.6",
     "@types/mocha": "^5.2.7",
-    "@types/node": "^20.4.1",
     "chai": "^4.2.0",
     "decimal.js": "^10.2.1",
     "ethereum-waffle": "^3.0.2",
