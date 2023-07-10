@@ -81,7 +81,7 @@ export default {
     harmony: {
       url: "https://api.harmony.one",
       chainId: 1666600000,
-      accounts: ['28a625eef8c9641365fb3dc5bc4166eb7933b87e68787f72c5185cd862a92998'], // Private key from your account
+      accounts: ['<HIDEN>'], // Private key from your account
       from: '0xbB70CA954d89779F8AFAAAb8Ae383b281e3B27A4', // Your Deployer Account
       gasPrice: 20000000000,
       gas: 3000000,
