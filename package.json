@@ -1,5 +1,5 @@
 {
-  "name": "@thinkincoin-libs/swap-v3-periphery",
+  "name": "@thinkincoin-libs/uniswap-v3-periphery",
   "description": "🎚 Peripheral smart contracts for interacting with Uniswap V3",
   "license": "GPL-2.0-or-later",
   "publishConfig": {
