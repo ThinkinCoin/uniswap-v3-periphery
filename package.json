@@ -1,5 +1,5 @@
 {
-  "name": "@thinkincoin-libs/uniswap-v3-periphery",
+  "name": "@thinkincoin-libs/swap-v3-periphery",
   "description": "🎚 Peripheral smart contracts for interacting with Uniswap V3",
   "license": "GPL-2.0-or-later",
   "publishConfig": {
@@ -30,9 +30,11 @@
   },
   "dependencies": {
     "@openzeppelin/contracts": "3.4.2-solc-0.7",
-    "@uniswap/lib": "^4.0.1-alpha",
     "@thinkincoin-libs/uniswap-v2-core": "1.0.1",
     "@thinkincoin-libs/uniswap-v3-core": "1.0.1",
+    "@uniswap/lib": "^4.0.1-alpha",
+    "@uniswap/v2-core": "^1.0.1",
+    "@uniswap/v3-core": "^1.0.1",
     "base64-sol": "1.0.1"
   },
   "devDependencies": {
