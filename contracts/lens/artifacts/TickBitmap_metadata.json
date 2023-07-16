@@ -1,0 +1,48 @@
+{
+	"compiler": {
+		"version": "0.7.6+commit.7338295f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"details": "The mapping uses int16 for keys since ticks are represented as int24 and there are 256 (2^8) values per word.",
+			"kind": "dev",
+			"methods": {},
+			"title": "Packed tick initialized state library",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"notice": "Stores a packed mapping of tick index to its initialized state",
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/lens/QuoterV2_flattened.sol": "TickBitmap"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/lens/QuoterV2_flattened.sol": {
+			"keccak256": "0x22470056d996cfc8e77b3b6e4ada6d5115eee7938d07f04958fe15c35f011824",
+			"license": "GPL-2.0-or-later",
+			"urls": [
+				"bzz-raw://a4e68e8fdc8b7b8f97557cf55f3e6de3101be0686de3c9773849059eed1dabcb",
+				"dweb:/ipfs/QmTmF4q7DGe2eRirhrQapCbBhgQNebjwdibzuQbh6iAvjv"
+			]
+		}
+	},
+	"version": 1
+}

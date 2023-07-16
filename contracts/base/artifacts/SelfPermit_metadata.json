@@ -1,0 +1,291 @@
+{
+	"compiler": {
+		"version": "0.7.6+commit.7338295f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "token",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "value",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "deadline",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint8",
+						"name": "v",
+						"type": "uint8"
+					},
+					{
+						"internalType": "bytes32",
+						"name": "r",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "bytes32",
+						"name": "s",
+						"type": "bytes32"
+					}
+				],
+				"name": "selfPermit",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "token",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "nonce",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "expiry",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint8",
+						"name": "v",
+						"type": "uint8"
+					},
+					{
+						"internalType": "bytes32",
+						"name": "r",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "bytes32",
+						"name": "s",
+						"type": "bytes32"
+					}
+				],
+				"name": "selfPermitAllowed",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "token",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "nonce",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "expiry",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint8",
+						"name": "v",
+						"type": "uint8"
+					},
+					{
+						"internalType": "bytes32",
+						"name": "r",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "bytes32",
+						"name": "s",
+						"type": "bytes32"
+					}
+				],
+				"name": "selfPermitAllowedIfNecessary",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "token",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "value",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "deadline",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint8",
+						"name": "v",
+						"type": "uint8"
+					},
+					{
+						"internalType": "bytes32",
+						"name": "r",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "bytes32",
+						"name": "s",
+						"type": "bytes32"
+					}
+				],
+				"name": "selfPermitIfNecessary",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"details": "These functions are expected to be embedded in multicalls to allow EOAs to approve a contract and call a function that requires an approval in a single transaction.",
+			"kind": "dev",
+			"methods": {
+				"selfPermit(address,uint256,uint256,uint8,bytes32,bytes32)": {
+					"details": "The `owner` is always msg.sender and the `spender` is always address(this).",
+					"params": {
+						"deadline": "A timestamp, the current blocktime must be less than or equal to this timestamp",
+						"r": "Must produce valid secp256k1 signature from the holder along with `v` and `s`",
+						"s": "Must produce valid secp256k1 signature from the holder along with `r` and `v`",
+						"token": "The address of the token spent",
+						"v": "Must produce valid secp256k1 signature from the holder along with `r` and `s`",
+						"value": "The amount that can be spent of token"
+					}
+				},
+				"selfPermitAllowed(address,uint256,uint256,uint8,bytes32,bytes32)": {
+					"details": "The `owner` is always msg.sender and the `spender` is always address(this)",
+					"params": {
+						"expiry": "The timestamp at which the permit is no longer valid",
+						"nonce": "The current nonce of the owner",
+						"r": "Must produce valid secp256k1 signature from the holder along with `v` and `s`",
+						"s": "Must produce valid secp256k1 signature from the holder along with `r` and `v`",
+						"token": "The address of the token spent",
+						"v": "Must produce valid secp256k1 signature from the holder along with `r` and `s`"
+					}
+				},
+				"selfPermitAllowedIfNecessary(address,uint256,uint256,uint8,bytes32,bytes32)": {
+					"details": "The `owner` is always msg.sender and the `spender` is always address(this) Can be used instead of #selfPermitAllowed to prevent calls from failing due to a frontrun of a call to #selfPermitAllowed.",
+					"params": {
+						"expiry": "The timestamp at which the permit is no longer valid",
+						"nonce": "The current nonce of the owner",
+						"r": "Must produce valid secp256k1 signature from the holder along with `v` and `s`",
+						"s": "Must produce valid secp256k1 signature from the holder along with `r` and `v`",
+						"token": "The address of the token spent",
+						"v": "Must produce valid secp256k1 signature from the holder along with `r` and `s`"
+					}
+				},
+				"selfPermitIfNecessary(address,uint256,uint256,uint8,bytes32,bytes32)": {
+					"details": "The `owner` is always msg.sender and the `spender` is always address(this). Can be used instead of #selfPermit to prevent calls from failing due to a frontrun of a call to #selfPermit",
+					"params": {
+						"deadline": "A timestamp, the current blocktime must be less than or equal to this timestamp",
+						"r": "Must produce valid secp256k1 signature from the holder along with `v` and `s`",
+						"s": "Must produce valid secp256k1 signature from the holder along with `r` and `v`",
+						"token": "The address of the token spent",
+						"v": "Must produce valid secp256k1 signature from the holder along with `r` and `s`",
+						"value": "The amount that can be spent of token"
+					}
+				}
+			},
+			"title": "Self Permit",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"selfPermit(address,uint256,uint256,uint8,bytes32,bytes32)": {
+					"notice": "Permits this contract to spend a given token from `msg.sender`"
+				},
+				"selfPermitAllowed(address,uint256,uint256,uint8,bytes32,bytes32)": {
+					"notice": "Permits this contract to spend the sender's tokens for permit signatures that have the `allowed` parameter"
+				},
+				"selfPermitAllowedIfNecessary(address,uint256,uint256,uint8,bytes32,bytes32)": {
+					"notice": "Permits this contract to spend the sender's tokens for permit signatures that have the `allowed` parameter"
+				},
+				"selfPermitIfNecessary(address,uint256,uint256,uint8,bytes32,bytes32)": {
+					"notice": "Permits this contract to spend a given token from `msg.sender`"
+				}
+			},
+			"notice": "Functionality to call permit on any EIP-2612-compliant token for use in the route",
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/base/SelfPermit.sol": "SelfPermit"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"@openzeppelin/contracts/drafts/IERC20Permit.sol": {
+			"keccak256": "0x1aab7754719ba764a8a05bec47e975001400f62986474945eb3dbee6d871259f",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://8c14e8ff1b384bdb68f262669364b1e79fbbd82b85938b7ce788a1395c40c6a2",
+				"dweb:/ipfs/QmUKLXfSeEuRUXkeWLBhjHTKeSFoNBCS1RaMXv1AmHXYzn"
+			]
+		},
+		"@openzeppelin/contracts/token/ERC20/IERC20.sol": {
+			"keccak256": "0xbd74f587ab9b9711801baf667db1426e4a03fd2d7f15af33e0e0d0394e7cef76",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://2d0913dfbfce90d170df0d496ad7596c0778518e5fa7aba6c32562522546f66b",
+				"dweb:/ipfs/QmR6B8nLj2PJf5e1JWD9Nk7ErkAwkqUwadCnvE82FJr1RU"
+			]
+		},
+		"contracts/base/SelfPermit.sol": {
+			"keccak256": "0x6d508a027f7a4a41ccb30a20f84bf29c52d7210d30e968142d064f9ce5c496ae",
+			"license": "GPL-2.0-or-later",
+			"urls": [
+				"bzz-raw://ff72331865afd843ac65d0fd559dc92bcfe1bcd9a2db913c1bdbb9f62224d724",
+				"dweb:/ipfs/Qme7YMqjHxoo3RuN9onk9Notw7h512NnVFncAjqX6HuQdV"
+			]
+		},
+		"contracts/interfaces/ISelfPermit.sol": {
+			"keccak256": "0xb442ad31c8fef5c47ebb82b3b3f906d0a5dbca8eb26db90b287a4825bf53d595",
+			"license": "GPL-2.0-or-later",
+			"urls": [
+				"bzz-raw://6e36e6e894083ad07e2ba62977a06db0874b8ed1f6eac705f4c9d89a410f54ea",
+				"dweb:/ipfs/QmWLWTuKrcCzxZeedLpUG3c8jjFLs5gLmvt35Ysp2uc9c6"
+			]
+		},
+		"contracts/interfaces/external/IERC20PermitAllowed.sol": {
+			"keccak256": "0x1495f5068f2b892668447889f379d87decb18c9369f4506df9d23edba9ccb4b7",
+			"license": "GPL-2.0-or-later",
+			"urls": [
+				"bzz-raw://6f322bead944abc1da0e75aba72c9e02b22f02c15712f49b212bb65869b406ca",
+				"dweb:/ipfs/QmTZAqfg4EwuFAX61ZW4nA55sUbn3o2Qy3W55C3ghPUAWM"
+			]
+		}
+	},
+	"version": 1
+}

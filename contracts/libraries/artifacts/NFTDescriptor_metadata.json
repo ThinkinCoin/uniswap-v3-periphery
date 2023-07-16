@@ -1,0 +1,265 @@
+{
+	"compiler": {
+		"version": "0.7.6+commit.7338295f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "tokenId",
+								"type": "uint256"
+							},
+							{
+								"internalType": "address",
+								"name": "quoteTokenAddress",
+								"type": "address"
+							},
+							{
+								"internalType": "address",
+								"name": "baseTokenAddress",
+								"type": "address"
+							},
+							{
+								"internalType": "string",
+								"name": "quoteTokenSymbol",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "baseTokenSymbol",
+								"type": "string"
+							},
+							{
+								"internalType": "uint8",
+								"name": "quoteTokenDecimals",
+								"type": "uint8"
+							},
+							{
+								"internalType": "uint8",
+								"name": "baseTokenDecimals",
+								"type": "uint8"
+							},
+							{
+								"internalType": "bool",
+								"name": "flipRatio",
+								"type": "bool"
+							},
+							{
+								"internalType": "int24",
+								"name": "tickLower",
+								"type": "int24"
+							},
+							{
+								"internalType": "int24",
+								"name": "tickUpper",
+								"type": "int24"
+							},
+							{
+								"internalType": "int24",
+								"name": "tickCurrent",
+								"type": "int24"
+							},
+							{
+								"internalType": "int24",
+								"name": "tickSpacing",
+								"type": "int24"
+							},
+							{
+								"internalType": "uint24",
+								"name": "fee",
+								"type": "uint24"
+							},
+							{
+								"internalType": "address",
+								"name": "poolAddress",
+								"type": "address"
+							}
+						],
+						"internalType": "struct NFTDescriptor.ConstructTokenURIParams",
+						"name": "params",
+						"type": "tuple"
+					}
+				],
+				"name": "constructTokenURI",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/libraries/NFTDescriptor.sol": "NFTDescriptor"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 10
+		},
+		"remappings": []
+	},
+	"sources": {
+		"@openzeppelin/contracts/math/SafeMath.sol": {
+			"keccak256": "0xe22a1fc7400ae196eba2ad1562d0386462b00a6363b742d55a2fd2021a58586f",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://4a635cec58fb4141a16cfd408f1a21ac944c335a3beaba541c35d2e95c04536f",
+				"dweb:/ipfs/QmXWcz73UenN1ji8jiWMbzxHjjfLbNQwLVKTEB5zNFE34K"
+			]
+		},
+		"@openzeppelin/contracts/math/SignedSafeMath.sol": {
+			"keccak256": "0xba085261d44cf28d2583f7c8cdb2f0a6a495ff1a640f86d995ea9d36b42b0046",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://03481543f67d854c94f73b006609ccd0e11a2461837296bf9d27b14b4bde7de6",
+				"dweb:/ipfs/QmVt8ZoWv6jPdtoo5zikqrj7ijDvKoQ4BWYiufctStkXd3"
+			]
+		},
+		"@openzeppelin/contracts/utils/Strings.sol": {
+			"keccak256": "0x08e38e034333372aea8cb1b8846085b7fbab42c6b77a0af464d2c6827827c4f0",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://22746e9348187309fb4fbd3f79f6ad88787103eac10f24bd18f67257fafdd8ad",
+				"dweb:/ipfs/QmSLXfXg8b27Xstq58DFGvCpqgtTqpfrGbLMq19PtEKQJS"
+			]
+		},
+		"@uniswap/v3-core/contracts/interfaces/IUniswapV3Pool.sol": {
+			"keccak256": "0xfe6113d518466cd6652c85b111e01f33eb62157f49ae5ed7d5a3947a2044adb1",
+			"license": "GPL-2.0-or-later",
+			"urls": [
+				"bzz-raw://1c42b9e6f5902ac38dd43e25750939baa7e0c1425dc75afd717c4412731065d5",
+				"dweb:/ipfs/QmWaoacnzsucTvBME2o7YgZBZMhaHv7fkj83htHMVWJKWh"
+			]
+		},
+		"@uniswap/v3-core/contracts/interfaces/pool/IUniswapV3PoolActions.sol": {
+			"keccak256": "0x9453dd0e7442188667d01d9b65de3f1e14e9511ff3e303179a15f6fc267f7634",
+			"license": "GPL-2.0-or-later",
+			"urls": [
+				"bzz-raw://982f4328f956c3e60e67501e759eb292ac487f76460c774c50e9ae4fcc92aae5",
+				"dweb:/ipfs/QmRnzEDsaqtd9PJEVcgQi7p5aV5pMSvRUoGZJAdwFUJxgZ"
+			]
+		},
+		"@uniswap/v3-core/contracts/interfaces/pool/IUniswapV3PoolDerivedState.sol": {
+			"keccak256": "0xe603ac5b17ecdee73ba2b27efdf386c257a19c14206e87eee77e2017b742d9e5",
+			"license": "GPL-2.0-or-later",
+			"urls": [
+				"bzz-raw://8febc9bdb399a4d94bb89f5377732652e2400e4a8dee808201ade6848f9004e7",
+				"dweb:/ipfs/QmaKDqYYFU4d2W2iN77aDHptfbFmYZRrMYXHeGpJmM8C1c"
+			]
+		},
+		"@uniswap/v3-core/contracts/interfaces/pool/IUniswapV3PoolEvents.sol": {
+			"keccak256": "0x8071514d0fe5d17d6fbd31c191cdfb703031c24e0ece3621d88ab10e871375cd",
+			"license": "GPL-2.0-or-later",
+			"urls": [
+				"bzz-raw://d0b571930cc7488b1d546a7e9cea7c52d8b3c4e207da657ed0e0db7343b8cd03",
+				"dweb:/ipfs/QmaGK6vVwB95QSTR1XMYvrh7ivYAYZxi3fD7v6VMA4jZ39"
+			]
+		},
+		"@uniswap/v3-core/contracts/interfaces/pool/IUniswapV3PoolImmutables.sol": {
+			"keccak256": "0xf6e5d2cd1139c4c276bdbc8e1d2b256e456c866a91f1b868da265c6d2685c3f7",
+			"license": "GPL-2.0-or-later",
+			"urls": [
+				"bzz-raw://b99c8c9ae8e27ee6559e5866bea82cbc9ffc8247f8d15b7422a4deb287d4d047",
+				"dweb:/ipfs/QmfL8gaqt3ffAnm6nVj5ksuNpLygXuL3xq5VBqrkwC2JJ3"
+			]
+		},
+		"@uniswap/v3-core/contracts/interfaces/pool/IUniswapV3PoolOwnerActions.sol": {
+			"keccak256": "0x759b78a2918af9e99e246dc3af084f654e48ef32bb4e4cb8a966aa3dcaece235",
+			"license": "GPL-2.0-or-later",
+			"urls": [
+				"bzz-raw://64144fb96e1c7fdba87305acadb98a198d26a3d46c097cb3a666e567f6f29735",
+				"dweb:/ipfs/QmUnWVwN9FKB9uV5Pr8YfLpWZnYM2DENnRMaadZ492JS9u"
+			]
+		},
+		"@uniswap/v3-core/contracts/interfaces/pool/IUniswapV3PoolState.sol": {
+			"keccak256": "0x852dc1f5df7dcf7f11e7bb3eed79f0cea72ad4b25f6a9d2c35aafb48925fd49f",
+			"license": "GPL-2.0-or-later",
+			"urls": [
+				"bzz-raw://ed63907c38ff36b0e22bc9ffc53e791ea74f0d4f0e7c257fdfb5aaf8825b1f0f",
+				"dweb:/ipfs/QmSQrckghEjs6HVsA5GVgpNpZWvTXMY5eQLF7cN6deFeEg"
+			]
+		},
+		"@uniswap/v3-core/contracts/libraries/BitMath.sol": {
+			"keccak256": "0x82e425066110aac05ed8a9fc90f9ee85142b6f434769447e49d4438a8d9fcd82",
+			"license": "GPL-2.0-or-later",
+			"urls": [
+				"bzz-raw://77a97078bc992c18c59cb61e07fa4632c8a26b6babf00f3b16eabb5dcaa953b4",
+				"dweb:/ipfs/QmTj15ufLWk6AxedSVXBcLp5cYf2DCJAeDi94cVemCkm54"
+			]
+		},
+		"@uniswap/v3-core/contracts/libraries/FullMath.sol": {
+			"keccak256": "0xe511530871deaef86692cea9adb6076d26d7b47fd4815ce51af52af981026057",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://bc5a6ae776be3e7dcbd23d49ffbc9d792fed0ddf4b111ebb64b9bb2133ec263e",
+				"dweb:/ipfs/QmbAUtWqvipzEARQpFpkzYKBELy3qeW5WXnZxHFU84sxG7"
+			]
+		},
+		"@uniswap/v3-core/contracts/libraries/TickMath.sol": {
+			"keccak256": "0x1f864a2bf61ba05f3173eaf2e3f94c5e1da4bec0554757527b6d1ef1fe439e4e",
+			"license": "GPL-2.0-or-later",
+			"urls": [
+				"bzz-raw://5139b586df546a9d1c46804ca400b1cb9ce87236eaf212ebd64edee6747a172a",
+				"dweb:/ipfs/QmVa2kcRw3VyuB6j1EVWXACKnkbQZgfXYXNi5voq3XkYG8"
+			]
+		},
+		"base64-sol/base64.sol": {
+			"keccak256": "0x0c8ad17afea99676d4dbab1857f52a7660b67602a79d03abd0a4c742074bbeb3",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://692d64ac089a389d2e955d92c75e9f3ee642257a39c91c2efa7493a21e79d61a",
+				"dweb:/ipfs/QmVSGRBRjeh4APNHjHD5GbYY7BrBhWRj8aHkmqHJQwQiK1"
+			]
+		},
+		"contracts/libraries/HexStrings.sol": {
+			"keccak256": "0x76ad8d62d4912de27afa5b98719c028f156fb921111ab712a2ec12fd1deff166",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://77419729f3c36cc55d424833c971c46f751dd7b0c98e83da0955734f4d1398bd",
+				"dweb:/ipfs/QmTWWqhAVabx3HYY6cme1G8Hr9M77bdwANoRaXDjX3K1oh"
+			]
+		},
+		"contracts/libraries/NFTDescriptor.sol": {
+			"keccak256": "0x137545bbc1c62dbc34fe55ede857a2605b2332eeef3f2dbb350a539e53bcdd56",
+			"license": "GPL-2.0-or-later",
+			"urls": [
+				"bzz-raw://c722499b27950acaa3971b64c7b70adeaa9a0ebdf0bd20253cbfb997f0e36ed9",
+				"dweb:/ipfs/QmNMA77qDVhAcx3PNxZMCccPjM9zTrsFZ2Lsj93Ns4YdGC"
+			]
+		},
+		"contracts/libraries/NFTSVG.sol": {
+			"keccak256": "0xcecbb30c492e704d0870b59bdcc04dcd0c7d46efacd527102bc471d9ab16ae43",
+			"license": "GPL-2.0-or-later",
+			"urls": [
+				"bzz-raw://b1f3a9183351fa211ceb914c10acbd2cb283af94074c89a0b490fce993e824c5",
+				"dweb:/ipfs/QmVbUAtAR1ye87opi6D2evEdtsAYTD2QiC9NF79CsYimAw"
+			]
+		}
+	},
+	"version": 1
+}

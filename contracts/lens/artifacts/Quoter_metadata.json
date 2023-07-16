@@ -1,0 +1,312 @@
+{
+	"compiler": {
+		"version": "0.7.6+commit.7338295f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_factory",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_WETH9",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "WETH9",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "factory",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes",
+						"name": "path",
+						"type": "bytes"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amountIn",
+						"type": "uint256"
+					}
+				],
+				"name": "quoteExactInput",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "amountOut",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "tokenIn",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "tokenOut",
+						"type": "address"
+					},
+					{
+						"internalType": "uint24",
+						"name": "fee",
+						"type": "uint24"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amountIn",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint160",
+						"name": "sqrtPriceLimitX96",
+						"type": "uint160"
+					}
+				],
+				"name": "quoteExactInputSingle",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "amountOut",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes",
+						"name": "path",
+						"type": "bytes"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amountOut",
+						"type": "uint256"
+					}
+				],
+				"name": "quoteExactOutput",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "amountIn",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "tokenIn",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "tokenOut",
+						"type": "address"
+					},
+					{
+						"internalType": "uint24",
+						"name": "fee",
+						"type": "uint24"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amountOut",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint160",
+						"name": "sqrtPriceLimitX96",
+						"type": "uint160"
+					}
+				],
+				"name": "quoteExactOutputSingle",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "amountIn",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "int256",
+						"name": "amount0Delta",
+						"type": "int256"
+					},
+					{
+						"internalType": "int256",
+						"name": "amount1Delta",
+						"type": "int256"
+					},
+					{
+						"internalType": "bytes",
+						"name": "path",
+						"type": "bytes"
+					}
+				],
+				"name": "uniswapV3SwapCallback",
+				"outputs": [],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"details": "These functions are not gas efficient and should _not_ be called on chain. Instead, optimistically execute the swap and check the amounts in the callback.",
+			"kind": "dev",
+			"methods": {
+				"quoteExactInput(bytes,uint256)": {
+					"params": {
+						"amountIn": "The amount of the first token to swap",
+						"path": "The path of the swap, i.e. each token pair and the pool fee"
+					},
+					"returns": {
+						"amountOut": "The amount of the last token that would be received"
+					}
+				},
+				"quoteExactInputSingle(address,address,uint24,uint256,uint160)": {
+					"params": {
+						"amountIn": "The desired input amount",
+						"fee": "The fee of the token pool to consider for the pair",
+						"sqrtPriceLimitX96": "The price limit of the pool that cannot be exceeded by the swap",
+						"tokenIn": "The token being swapped in",
+						"tokenOut": "The token being swapped out"
+					},
+					"returns": {
+						"amountOut": "The amount of `tokenOut` that would be received"
+					}
+				},
+				"quoteExactOutput(bytes,uint256)": {
+					"params": {
+						"amountOut": "The amount of the last token to receive",
+						"path": "The path of the swap, i.e. each token pair and the pool fee. Path must be provided in reverse order"
+					},
+					"returns": {
+						"amountIn": "The amount of first token required to be paid"
+					}
+				},
+				"quoteExactOutputSingle(address,address,uint24,uint256,uint160)": {
+					"params": {
+						"amountOut": "The desired output amount",
+						"fee": "The fee of the token pool to consider for the pair",
+						"sqrtPriceLimitX96": "The price limit of the pool that cannot be exceeded by the swap",
+						"tokenIn": "The token being swapped in",
+						"tokenOut": "The token being swapped out"
+					},
+					"returns": {
+						"amountIn": "The amount required as the input for the swap in order to receive `amountOut`"
+					}
+				},
+				"uniswapV3SwapCallback(int256,int256,bytes)": {
+					"details": "In the implementation you must pay the pool tokens owed for the swap. The caller of this method must be checked to be a UniswapV3Pool deployed by the canonical UniswapV3Factory. amount0Delta and amount1Delta can both be 0 if no tokens were swapped.",
+					"params": {
+						"amount0Delta": "The amount of token0 that was sent (negative) or must be received (positive) by the pool by the end of the swap. If positive, the callback must send that amount of token0 to the pool.",
+						"amount1Delta": "The amount of token1 that was sent (negative) or must be received (positive) by the pool by the end of the swap. If positive, the callback must send that amount of token1 to the pool.",
+						"data": "Any data passed through by the caller via the IUniswapV3PoolActions#swap call"
+					}
+				}
+			},
+			"stateVariables": {
+				"amountOutCached": {
+					"details": "Transient storage variable used to check a safety condition in exact output swaps."
+				}
+			},
+			"title": "Provides quotes for swaps",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"quoteExactInput(bytes,uint256)": {
+					"notice": "Returns the amount out received for a given exact input swap without executing the swap"
+				},
+				"quoteExactInputSingle(address,address,uint24,uint256,uint160)": {
+					"notice": "Returns the amount out received for a given exact input but for a swap of a single pool"
+				},
+				"quoteExactOutput(bytes,uint256)": {
+					"notice": "Returns the amount in required for a given exact output swap without executing the swap"
+				},
+				"quoteExactOutputSingle(address,address,uint24,uint256,uint160)": {
+					"notice": "Returns the amount in required to receive the given exact output amount but for a swap of a single pool"
+				},
+				"uniswapV3SwapCallback(int256,int256,bytes)": {
+					"notice": "Called to `msg.sender` after executing a swap via IUniswapV3Pool#swap."
+				}
+			},
+			"notice": "Allows getting the expected amount out or amount in for a given swap without executing the swap",
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/lens/Quoter_flattened.sol": "Quoter"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/lens/Quoter_flattened.sol": {
+			"keccak256": "0x3f9695c7ec4a3fa11f5a9d0eaf9aada9d61fcb7fedd7d0abc2c8edf9bc75cafc",
+			"license": "GPL-2.0-or-later",
+			"urls": [
+				"bzz-raw://094d8b040401547a2eaff56b56f25484927138d22930386c2df674c3ddfb113d",
+				"dweb:/ipfs/QmZf3rcJhRpkseKGSSE3DB9SHthNRZfwZnWfDAX8N5SURf"
+			]
+		}
+	},
+	"version": 1
+}

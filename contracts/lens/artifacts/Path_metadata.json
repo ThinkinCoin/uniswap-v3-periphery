@@ -1,0 +1,63 @@
+{
+	"compiler": {
+		"version": "0.7.6+commit.7338295f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"stateVariables": {
+				"ADDR_SIZE": {
+					"details": "The length of the bytes encoded address"
+				},
+				"FEE_SIZE": {
+					"details": "The length of the bytes encoded fee"
+				},
+				"MULTIPLE_POOLS_MIN_LENGTH": {
+					"details": "The minimum length of an encoding that contains 2 or more pools"
+				},
+				"NEXT_OFFSET": {
+					"details": "The offset of a single token address and pool fee"
+				},
+				"POP_OFFSET": {
+					"details": "The offset of an encoded pool key"
+				}
+			},
+			"title": "Functions for manipulating path data for multihop swaps",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/lens/QuoterV2_flattened.sol": "Path"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/lens/QuoterV2_flattened.sol": {
+			"keccak256": "0x22470056d996cfc8e77b3b6e4ada6d5115eee7938d07f04958fe15c35f011824",
+			"license": "GPL-2.0-or-later",
+			"urls": [
+				"bzz-raw://a4e68e8fdc8b7b8f97557cf55f3e6de3101be0686de3c9773849059eed1dabcb",
+				"dweb:/ipfs/QmTmF4q7DGe2eRirhrQapCbBhgQNebjwdibzuQbh6iAvjv"
+			]
+		}
+	},
+	"version": 1
+}

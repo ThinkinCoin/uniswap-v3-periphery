@@ -1,0 +1,81 @@
+{
+	"compiler": {
+		"version": "0.7.6+commit.7338295f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "bytes[]",
+						"name": "data",
+						"type": "bytes[]"
+					}
+				],
+				"name": "multicall",
+				"outputs": [
+					{
+						"internalType": "bytes[]",
+						"name": "results",
+						"type": "bytes[]"
+					}
+				],
+				"stateMutability": "payable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {
+				"multicall(bytes[])": {
+					"details": "The `msg.value` should not be trusted for any method callable from multicall.",
+					"params": {
+						"data": "The encoded function data for each of the calls to make to this contract"
+					},
+					"returns": {
+						"results": "The results from each of the calls passed in via data"
+					}
+				}
+			},
+			"title": "Multicall interface",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"multicall(bytes[])": {
+					"notice": "Call multiple functions in the current contract and return the data from all of them if they all succeed"
+				}
+			},
+			"notice": "Enables calling multiple methods in a single call to the contract",
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/V3Migrator_flattened.sol": "IMulticall"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 1000
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/V3Migrator_flattened.sol": {
+			"keccak256": "0xe4b0060481b932f4d739b4ce0ce69c6a51c624fc2b42ad69d294c3ec5ce07265",
+			"license": "GPL-2.0-or-later",
+			"urls": [
+				"bzz-raw://5cf0944fccb0206a73bc927467b4cb7c0dcf34aa3bb719c71247039e876bd850",
+				"dweb:/ipfs/QmNmnxspyKFmQoEHvvQ4FyeFz3xCyARasNAYp4YuK758LC"
+			]
+		}
+	},
+	"version": 1
+}

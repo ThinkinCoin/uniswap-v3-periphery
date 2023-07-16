@@ -1,0 +1,47 @@
+{
+	"compiler": {
+		"version": "0.7.6+commit.7338295f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"details": "Signed math operations with safety checks that revert on error.",
+			"kind": "dev",
+			"methods": {},
+			"title": "SignedSafeMath",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/libraries/NFTDescriptor_flattened.sol": "SignedSafeMath"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/libraries/NFTDescriptor_flattened.sol": {
+			"keccak256": "0xefdf158bf8d7f3260de3efca7636c3d02fe7d40bbfa2c4647498d9ca22b91113",
+			"license": "GPL-2.0-or-later",
+			"urls": [
+				"bzz-raw://29576f160c7c6e81e1c82456b0aaf6cdee22cb0f63be23eb94c1ec5a73e239e1",
+				"dweb:/ipfs/QmNedAQtJtQsqTxihARJqWx8gg5wxvsiM5EyoEuYxz2fqJ"
+			]
+		}
+	},
+	"version": 1
+}
